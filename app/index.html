@@ -20,8 +20,8 @@
             <label class="control-label" for="search"></label>
             <span class="glyphicon glyphicon-search"></span>
             <input name="search" id="search" ng-model="searchValue" type="text" placeholder="Search for code">
+            <div class="search-error">{{ searchError }}</div>
         </div>
-        <div class="search-error">{{ searchError }}</div>
     </div>
     <div ng-view class="view-frame"></div>
 </div>

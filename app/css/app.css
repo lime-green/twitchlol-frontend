@@ -54,7 +54,8 @@ table {
 
 .search-error {
   color: red;
-  font-size: 10px; }
+  font-size: 10px;
+  margin-top: 10px; }
 
 #search {
   padding: 4px;
