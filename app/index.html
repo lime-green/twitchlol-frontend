@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+    <meta charset="UTF-8">
     <script src="../bower_components/angular/angular.js"></script>
     <script src="../bower_components/angular-route/angular-route.min.js"></script>
     <script src="js/app.js"></script>
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="view-container">
-        <div ng-view class="view-frame"></div>
+<div id="header">
+    <h1 id="site-logo"><a href="/app/#">Twitch-Lol</a></h1>
+</div>
+<div class="container">
+    <div id="searchDiv" ng-controller="SearchController" ng-keydown="keyDownListener($event)">
+        <div class="search-container">
+            <label class="control-label" for="search"></label>
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search" id="search" ng-model="searchValue" type="text" placeholder="Search for code">
+        </div>
+        <div class="search-error">{{ searchError }}</div>
     </div>
+    <div ng-view class="view-frame"></div>
+</div>
+<div id="footer">
+    &copy; 2015 Joshua Doncaster-Marsiglio
+</div>
 </body>
 </html>

@@ -1,0 +1,127 @@
+#site-logo {
+  font-family: 'Allura', cursive;
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+  color: #4F2F4F; }
+  #site-logo a {
+    color: inherit; }
+    #site-logo a:hover {
+      text-decoration: none;
+      color: #7f4c7f; }
+
+body {
+  background: url("../images/dark_embroidery.png") repeat 0 0; }
+
+.container {
+  margin-top: 15px;
+  min-height: 100vh;
+  height: 100vh;
+  background: url("../images/dark_embroidery.png") repeat 0 0; }
+
+#footer {
+  color: white;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  font-size: 10px; }
+
+#header {
+  border-bottom: 5px solid #4F2F4F;
+  background: #E0EEEE;
+  background: url("../images/symphony.png") repeat 0 0; }
+
+.summoners {
+  margin-top: 15px;
+  background: white;
+  color: #800080; }
+
+.twitch-name {
+  color: #800080; }
+
+tr, th, td {
+  border-color: #9D6B84 !important; }
+
+table {
+  border: 2px solid  #9D6B84 !important;
+  background: url("../images/symphony.png") repeat 0 0 !important; }
+
+.glyphicon-remove {
+  color: red; }
+  .glyphicon-remove:hover {
+    cursor: pointer;
+    color: #990000; }
+
+.search-error {
+  color: red;
+  font-size: 10px; }
+
+#search {
+  padding: 4px;
+  padding-left: 20px;
+  border: none;
+  border-bottom: solid 2px purple;
+  transition: border 0.3s;
+  text-align: center;
+  background: url("../images/symphony.png") repeat 0 0;
+  color: black; }
+  #search:focus {
+    border-bottom: solid 2px #969696;
+    color: black; }
+
+::-webkit-input-placeholder {
+  color: purple; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: purple; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: purple; }
+
+:-ms-input-placeholder {
+  color: purple; }
+
+#searchDiv {
+  margin-bottom: 20px; }
+
+.summoner-info {
+  color: white; }
+  .summoner-info .glyphicon {
+    font-size: 20px;
+    vertical-align: middle; }
+
+.search-container {
+  position: relative;
+  text-align: center; }
+
+.glyphicon-search {
+  text-align: left;
+  position: absolute;
+  padding: 6px 10px;
+  color: black; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?nze0fq");
+  src: url("fonts/icomoon.eot?nze0fq#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?nze0fq") format("truetype"), url("fonts/icomoon.woff?nze0fq") format("woff"), url("fonts/icomoon.svg?nze0fq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-trophy:before {
+  content: "\e900"; }
+
+/*# sourceMappingURL=app.css.map */

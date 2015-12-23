@@ -1,10 +1,23 @@
-<table ng-if="summoners.length" class="summoners">
-    <tr ng-repeat="summoner in summoners">
-        <td class="summoner-name"><a href="#/{{ sha }}/{{ summoner.id }}">{{ summoner.name }}</a></td>
-        <td class="summoner-region">{{ summoner.region }}</td>
-        <td class="unlink"><button ng-click="unlink(summoner.id)">x</button></td>
-    </tr>
-</table>
+<div ng-if="summoners.length" class="has-summoners">
+    <b class="summoner-info"><span class="glyphicon glyphicon-info-sign"></span> Summoner information for <span class="twitch-name">{{ twitchName }}</span></b>
+    <table class="table summoners">
+        <thead>
+        <tr>
+            <th>Summoner Name</th>
+            <th><span class="glyphicon icon-trophy"></span> Division</th>
+            <th><span class="glyphicon glyphicon-globe"></span> Region</th>
+            <th><span class="glyphicon glyphicon-resize-full"></span> Unlink</th>
+        </tr>
+        </thead>
+        <tr ng-repeat="summoner in summoners">
+            <td class="summoner-name"><a href="#/{{ sha }}/{{ summoner.id }}">{{ summoner.name }}</a></td>
+            <td class="summoner-division">{{summoner.division}}</td>
+            <td class="summoner-region">{{ summoner.region }}</td>
+            <td class="unlink"><span class="glyphicon glyphicon-remove" ng-click="unlink(summoner.id)"></span></td>
+        </tr>
+    </table>
+</div>
+
 <p ng-if="summoners && !summoners.length">
     No summoners to display
 </p>
